@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Enable FZF support
+if [[ -x "$(command -v fzf)" ]]; then
+    source /usr/share/bash-completion/completions/fzf
+    source /usr/share/fzf/key-bindings.bash
+fi
+
+# Programmable completion
+if ! shopt -oq posix; then
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+        . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
+fi
+
+# Enable tabtab
+[ -f "$HOME/.config/tabtab/__tabtab.bash" ] && . "$HOME/.config/tabtab/__tabtab.bash"
+
+# Disable stuff like ^S and ^Q
+stty -ixon
+
+# Enable Vi(M) mode
+set -o vi
+
+# cd into a directory with only the name supplied
+shopt -s autocd
+
+# Enable extended globbing
+shopt -s globstar
+shopt -s extglob
