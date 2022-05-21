@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 # Enable FZF support
-if [[ -x "$(command -v fzf)" ]]; then
-    source /usr/share/bash-completion/completions/fzf
-    source /usr/share/fzf/key-bindings.bash
-fi
+_fzf_comp='/usr/share/bash-completion/completions/fzf'
+_fzf_binds='/usr/share/fzf/key-bindings.bash'
+
+[ -f "$_fzf_comp" ] && source "$_fzf_comp"
+[ -f "$_fzf_binds" ] && source "$_fzf_binds"
 
 # Programmable completion
 if ! shopt -oq posix; then
