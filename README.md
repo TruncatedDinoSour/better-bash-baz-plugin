@@ -24,3 +24,9 @@ $ baz install git 'https://ari-web.xyz/gh/better-bash-baz-plugin'
   by accident
 - Sets histories to go to `~/.cache`
 - Makes bash not store duplicate history entries
+- Makes tar `xz` compression best
+- Makes FZF better
+- Enables a bunch of usability flags for `less`
+- Add local `man` pages to `MANPATH`
+- Move `.Xauthority` file to a more clean directory
+- Move `GTK3` config to `~/.config/gtk-2.0`
