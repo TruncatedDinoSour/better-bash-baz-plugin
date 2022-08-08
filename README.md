@@ -19,7 +19,7 @@ $ baz install git 'https://ari-web.xyz/gh/better-bash-baz-plugin'
 - Enables `vi` mode
 - Enables `autocd` (type directory name to `cd` into it)
 - Enables more and extended globbing
-- Sets `ENV` to `~/.profile` for `/bin/sh`
+- Sets `ENV` to `~/.bashrc` for `/bin/sh`
 - Sets function nesting to `100` so you don't fork yourself
   by accident
 - Sets histories to go to `~/.cache`
