@@ -31,3 +31,5 @@ $ baz install git 'https://ari-web.xyz/gh/better-bash-baz-plugin'
 - Move `.Xauthority` file to a more clean directory
 - Move `GTK3` config to `~/.config/gtk-2.0`
 - Fixes gpg TTY for signing
+- Sets the `JOBS` environment variable for building
+- Sets the  visual to your editor
