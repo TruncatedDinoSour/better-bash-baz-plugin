@@ -1,5 +1,26 @@
 #!/usr/bin/env bash
 
+# Could use `environments` but it's less performant
+export ENV="$HOME/.bashrc" \
+    FUNCNEST=100 \
+    FZF_DEFAULT_COMMAND='find .' \
+    FZF_DEFAULT_OPTS='--layout=reverse --height=20 --no-mouse -i' \
+    FZF_TMUX_HEIGHT='20' \
+    GPG_TTY="$(tty)" \
+    GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0" \
+    HISTCONTROL='ignoredups' \
+    HISTFILE="$HOME/.cache/.bash_history" \
+    JOBS="$(nproc --all)" \
+    LESS='-rIM --use-color --incsearch' \
+    LESSHISTFILE="$HOME/.cache/.lesshst" \
+    MANPATH="$MANPATH:$HOME/.local/share/man" \
+    NODE_REPL_HISTORY="$HOME/.cache/.node_repl_history" \
+    RLWRAP_HOME="$HOME/.cache" \
+    SQLITE_HISTORY="$HOME/.cache/.sqlite_history" \
+    VISUAL="$EDITOR" \
+    XAUTHORITY="$HOME/.local/share/xorg/Xauthorty" \
+    XZ_OPT='-e9T0'
+
 # Enable FZF support
 _fzf_comp='/usr/share/bash-completion/completions/fzf'
 _fzf_binds='/usr/share/fzf/key-bindings.bash'
