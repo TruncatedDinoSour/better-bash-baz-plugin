@@ -32,3 +32,4 @@ $ baz install git 'https://ari-web.xyz/gh/better-bash-baz-plugin'
 - Fixes gpg TTY for signing
 - Sets the `JOBS` environment variable for building
 - Sets the visual to your editor
+- Sets `ENV` to nothing (`''`) for default config files

@@ -18,7 +18,8 @@ export FUNCNEST=100 \
     SQLITE_HISTORY="$HOME/.cache/.sqlite_history" \
     VISUAL="$EDITOR" \
     XAUTHORITY="$HOME/.local/share/xorg/Xauthorty" \
-    XZ_OPT='-e9T0'
+    XZ_OPT='-e9T0' \
+    ENV=''
 
 # Enable FZF support
 _fzf_comp='/usr/share/bash-completion/completions/fzf'
