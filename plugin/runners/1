@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Could use `environments` but it's less performant
-export FUNCNEST=100 \
+export ENV="$HOME/.bashrc" \
+    FUNCNEST=100 \
     FZF_DEFAULT_COMMAND='find .' \
     FZF_DEFAULT_OPTS='--layout=reverse --height=20 --no-mouse -i' \
     FZF_TMUX_HEIGHT='20' \
@@ -18,8 +19,7 @@ export FUNCNEST=100 \
     SQLITE_HISTORY="$HOME/.cache/.sqlite_history" \
     VISUAL="$EDITOR" \
     XAUTHORITY="$HOME/.local/share/xorg/Xauthorty" \
-    XZ_OPT='-e9T0' \
-    ENV=''
+    XZ_OPT='-e9T0'
 
 # Enable FZF support
 _fzf_comp='/usr/share/bash-completion/completions/fzf'
