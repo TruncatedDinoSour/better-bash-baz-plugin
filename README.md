@@ -1,3 +1,4 @@
+# This repository has been migrated to the self-hosted ari-web Forgejo instance: <https://git.ari.lt/ari/better-bash-baz-plugin>
 # Baz plugin: better-bash-baz-plugin
 
 > Baz plugin for making your bash better
